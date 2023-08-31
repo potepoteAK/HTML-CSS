@@ -1,0 +1,93 @@
+@media(max-width: 1080px) {
+
+    .main {
+        padding-top: 60px;
+    }
+
+    .HeaderContainer {
+        position: fixed;
+        background-color: #fff;
+    }
+
+    .HeaderHumburger {
+        display: block;
+    }
+
+    .HeaderNavi {
+        display: none;
+    }
+
+    .HeaderCounseling {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 1024px) {
+    .AboutPotepanCampContent {
+        flex-direction: column;
+    }
+
+    .AboutPotepanCampContent>video {
+        margin-bottom: 16px;
+        width: 75%;
+    }
+
+    .AboutPotepanCamp {
+        margin-left: 0;
+        width: 75%;
+    }
+
+    .AboutImage {
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .EyeCatchingContainer {
+        background-image: none;
+        padding: 0 0 35px 0;
+    }
+
+    .ResponsiveImage {
+        display: block;
+        width: 100%;
+    }
+
+    .EyeCatchingContent {
+        margin-top: -45vw;
+        padding: 0 20px 0;
+    }
+
+    .EyeCatching {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .EyeCatching>h1 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .Images {
+        justify-content: space-between;
+    }
+
+    .Images>img {
+        width: 27.5%;
+    }
+
+    .AboutPotepanCampContent {
+        padding: 0 20px;
+    }
+
+    .AboutPotepanCampContent>video {
+        width: 100%;
+    }
+
+    .AboutPotepanCamp {
+        width: 100%;
+    }
+}

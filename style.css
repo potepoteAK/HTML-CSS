@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.HeaderContainer {
+  width: 100%;
+  position: absolute;
+  padding: 20px 0;
+}
+
+.HeaderContent {
+  display: Flex;
+  justify-content: space-between;
+  margin: 0 36px;
+}
+
+.HeaderLogo {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderLogo>a>img {
+  width: auto;
+  height: 20px;
+  transition: opacity .2s;
+  vertical-align: middle;
+}
+
+.HeaderLogo>a>img:hover {
+  opacity: .8;
+}
+
+/*ハンバーガーメニュー。*/
+/*普段は表示せず、レスポンシブ対応の時のみ表示。*/
+/*まだJavaScript学習していないため、クリックした時の動作は実装しなくて良いとのこと。*/
+
+.HeaderHumburger {
+  display: none;
+}
+
+#MenuBtnCheck {
+  display: none;
+}
+
+.MenuBtn {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 21px;
+}
+
+.MenuBtn span,
+.MenuBtn span::before,
+.MenuBtn span::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.MenuBtn span {
+  top: 8px;
+}
+
+.MenuBtn span::before {
+  bottom: 8px;
+}
+
+.MenuBtn span::after {
+  top: 8px;
+}
+
+/*ハンバーガーメニューここまで*/
+
+.HeaderNavi {
+  display: Flex;
+  margin-left: auto;
+}
+
+.HeaderNavi>a {
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: opacity .2s;
+}
+
+.HeaderNavi>a:hover {
+  opacity: .8;
+}
+
+.HeaderNavi>a>span:first-child {
+  font-family: 'Lato', sans-serif;
+}
+
+.HeaderNavi>a>span:last-child {
+  font-size: 10px;
+}
+
+.HeaderCounseling>a {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 40px;
+  width: 150px;
+  border-radius: 38px;
+  background-color: #f79214;
+  transition: opacity .2s;
+}
+
+.HeaderCounseling>a:hover {
+  opacity: 0.8;
+}
+
+.ResponsiveImage {
+  display: none;
+}
+
+.EyeCatchingContainer {
+  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+.EyeCatchingContent {
+  max-width: 1140px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.EyeCatching {
+  width: fit-content;
+  margin-bottom: 70px;
+}
+
+.EyeCatching>h1 {
+  text-align: center;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54px;
+  margin: 0 0 15px 0;
+}
+
+.Images {
+  display: flex;
+  align-items: center;
+}
+
+.Images>img {
+  margin-right: 8px;
+}
+
+.Images>img:nth-child(2) {
+  width: 40%;
+}
+
+.Images>img:last-child {
+  margin-right: 0;
+}
+
+.EyeCatchingCounseling>a {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 20px 0;
+  line-height: 64px;
+  border-radius: 38px;
+  background-color: #f79214;
+  transition: opacity .2s;
+}
+
+.EyeCatchingCounseling>a:hover {
+  opacity: 0.8;
+}
+
+.note>p>small {
+  color: #a2a2a4;
+  font-size: 12px;
+  line-height: 1.5px;
+}
+
+.AboutPotepanCampContainer {
+  background-color: #f79214;
+  padding: 44px 0px;
+}
+
+.AboutPotepanCampContent {
+  max-width: 1140px;
+  padding: 0 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AboutPotepanCampContent>video {
+  width: 50%;
+}
+
+.AboutPotepanCamp {
+  width: 100%;
+  margin-left: 38px;
+  color: white;
+}
+
+.AboutPotepanCamp>h2 {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0 0 8px 0;
+  line-height: 54px;
+}
+
+.AboutPotepanCamp>h2>span {
+  font-family: 'Lato', sans-serif;
+}
+
+.AboutPotepanCamp>p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.AboutImage>a>img {
+  width: 158px;
+}
